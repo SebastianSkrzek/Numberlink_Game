@@ -1,0 +1,16 @@
+Numberlink to rodzaj łamigłówki logicznej polegającej na znajdowaniu ścieżek do łączenia liczb w siatce.
+
+                            Historia:
+                            W 1897 roku podobna forma układanki została wydrukowana w Brooklyn Daily Eagle.
+                            Później nieco inną wersję Number Link można znaleźć w książce Henry'ego Ernesta Dudeneya
+                            \"Rozrywki w matematyce\" (1917) jako zagadkę dla kierowców. Ten typ układanki został
+                            spopularyzowany w Japonii przez Nikoli jako Arukone (ア ル コ ネ, Alphabet Connection)
+                            i Nanbarinku (ナ ン バ ー リ ン ク, Number Link). Różnica między Arukone i Nanbarinku
+                            polega na tym, że w Arukone łączone są pary liter (jak w układance Dudeneya),
+                            podczas gdy w Nanbarinku łączymy pary liczb.
+
+                            Od 2006 roku Nikoli opublikował trzy książki składające się wyłącznie z zagadek Numberlink.
+                            Wersje tego, znane jako Wire Storm, Flow Free i Alphabet Connection, zostały wydane
+                            jako aplikacje na iOS , Androida i Windows Phone.
+                            Źródło: Wikipedia.
+

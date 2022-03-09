@@ -22,7 +22,6 @@ public class Square extends JButton {
         this.color = color;
     }
 
-
     public int getxCoordinate() {
         return xCoordinate;
     }

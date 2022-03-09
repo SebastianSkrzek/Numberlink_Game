@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class BoardView extends JFrame implements ActionListener {
+public class BoardView extends JFrame {
 
     GameController gameController;
     BoardModel boardModel;
@@ -156,13 +156,10 @@ public class BoardView extends JFrame implements ActionListener {
 
         setVisible(true);
 
-
         setColor(Color.WHITE);
-
+        setResizable(false);
 
     }
-
-
 
     public Square[][] getButton() {
         return button;
@@ -273,10 +270,7 @@ public class BoardView extends JFrame implements ActionListener {
         this.boardModel = boardModel;
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        System.out.println("tytytytytyyt");
-    }
+
 }
 
 

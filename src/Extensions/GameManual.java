@@ -20,7 +20,7 @@ public class GameManual {
 
         aboutGameText = "";
 
-        System.out.println(aboutGameFile);
+
         BufferedReader br = new BufferedReader(new FileReader(aboutGameFile));
         String aLineFromFile;
         while ((aLineFromFile = br.readLine()) != null){
@@ -33,7 +33,7 @@ public class GameManual {
 
         rulesText = "";
 
-        System.out.println(rulesFile);
+
         BufferedReader br = new BufferedReader(new FileReader(rulesFile));
         String aLineFromFile;
         while ((aLineFromFile = br.readLine()) != null){

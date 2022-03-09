@@ -11,11 +11,9 @@ public class BoardModel {
     BoardView boardView;
     GameController gameController;
 
-
     int size;
     int difficulty;
     int randomNum;
-
 
     ArrayList<Integer> coordinates_x_numbers_first;
     ArrayList<Integer> coordinates_y_numbers_first;
@@ -23,9 +21,7 @@ public class BoardModel {
     ArrayList<Integer> coordinates_x_numbers_second;
     ArrayList<Integer> coordinates_y_numbers_second;
 
-
     public BoardModel() {
-
         coordinates_x_numbers_first = new ArrayList<>();
         coordinates_y_numbers_first = new ArrayList<>();
         coordinates_x_numbers_second = new ArrayList<>();
@@ -36,7 +32,6 @@ public class BoardModel {
     }
 
     public void loadBoard(File file) throws FileNotFoundException {
-
         coordinates_x_numbers_first.clear();
         coordinates_y_numbers_first.clear();
         coordinates_x_numbers_second.clear();
@@ -88,13 +83,11 @@ public class BoardModel {
                 boardView.getButton()[i][j].setBounds(60 + 50 * i, 20 + 50 * j, 50, 50);
                 String s = String.valueOf(boardView.getButton()[i][j].getname());
 
-
                 if(boardView.getButton()[i][j].getClass()==new Digit(Color.WHITE,1,1,2, true).getClass()) {
                     boardView.getButton()[i][j].setText(s);
                 }
 
                 boardView.getButton()[i][j].setBackground(boardView.getButton()[i][j].getColor());
-
                 boardView.add(boardView.getButton()[i][j]);
                 boardView.getButton()[i][j].addActionListener(gameController);
             }
@@ -115,7 +108,6 @@ public class BoardModel {
             for(int j=0;j<size+1;j++){
 
                 if(boardView.getButton()[i][j].getColor().equals(Color.WHITE)){
-
                     flag1=true;
                 }
             }
@@ -165,7 +157,6 @@ public class BoardModel {
                     }
 
                     if(x_now>0) {
-
                         if (boardView.getButton()[x_now - 1][y_now].getColor().equals(boardView.getButton()[x_now][y_now].getColor())) {
                             count++;
                             move = 4;
@@ -275,19 +266,20 @@ public class BoardModel {
                 }
             }
         }
+
         return 2;
     }
 
     public void saveBoard(File file, Square[][] button) throws FileNotFoundException {
-        PrintWriter zapis = new PrintWriter(file);
+        PrintWriter save = new PrintWriter(file);
         for (Square[] s : button) {
             for (Square p : s) {
                 if(p != null) {
-                    zapis.println(p.isDigit() + " " + p.getColor().getRed() + " " + p.getColor().getGreen() + " " + p.getColor().getBlue() + " " + p.getxCoordinate() + " " + p.getyCoordinate() + " " + p.getname());
+                    save.println(p.isDigit() + " " + p.getColor().getRed() + " " + p.getColor().getGreen() + " " + p.getColor().getBlue() + " " + p.getxCoordinate() + " " + p.getyCoordinate() + " " + p.getname());
                 }
             }
         }
-        zapis.close();
+        save.close();
     }
 
     public void reset(){//czyszczenie przycisków przy rozpoczęciu nowej gry lub zmianie trudności
@@ -365,9 +357,6 @@ public class BoardModel {
     }
 
 
-
-
-
     public void changeDifficulty(int difficulty) throws FileNotFoundException {
 
         if(difficulty==1){
@@ -381,7 +370,7 @@ public class BoardModel {
         if(difficulty==2){
             size=7;
             randomNum = (int)(Math.random() * 9);
-            System.out.println();
+
             File file = new File("medium_board");
             File[] contents = file.listFiles();
             loadBoard(contents[randomNum]);

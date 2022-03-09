@@ -23,10 +23,9 @@ public class GameController implements ActionListener {
 
     }
 
-
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("asdads");
+
         Object from = e.getSource();
 
         for(int i=0;i<boardModel.getSize()+1;i++)

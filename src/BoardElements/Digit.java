@@ -1,7 +1,3 @@
-package BoardElements;
-
-import BoardElements.Square;
-
 import java.awt.*;
 
 public class Digit extends Square {

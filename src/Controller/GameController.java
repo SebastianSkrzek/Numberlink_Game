@@ -1,9 +1,3 @@
-package Controller;
-
-import Extensions.GameManual;
-import Model.BoardModel;
-import View.BoardView;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;

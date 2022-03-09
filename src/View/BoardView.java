@@ -1,9 +1,3 @@
-package View;
-
-import BoardElements.Square;
-import Controller.GameController;
-import Model.BoardModel;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

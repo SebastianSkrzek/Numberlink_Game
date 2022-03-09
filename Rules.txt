@@ -1,0 +1,10 @@
+Zasady:
+Gracz musi połączyć wszystkie pasujące liczby na siatce z pojedyńczymi ciągłymi ścieżkami.
+Ścieżki nie mogą się rozgałęziać ani przecinać, a liczby muszą znajdować się na krańcach każdej ścieżki.
+Każde pole planszy powinna wypełnić ścieżka.
+
+Instrukcja:
+Aby zacząć tworzyć ścieżkę, należy z prawej strony wybrać numer liczby, którą chcemy połączyć,
+a następnie klikając w pola na planszy, zmieniamy ich kolory. W ten sposób łącząc wszystkie pary
+cyfr ścieżką jednego koloru (kolor musi odpowiadać kolorowi cyfry), rozwiązujemy układankę.
+Aby sprawdzić poprawność rozwiązania, należy wcisnąć przycisk \"solve\

@@ -1,5 +1,3 @@
-package Extensions;
-
 import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,8 +8,8 @@ public class GameManual {
     private String aboutGameText;
     private String rulesText;
 
-    private String aboutGameFile;
-    private String rulesFile;
+    private final String aboutGameFile;
+    private final String rulesFile;
 
     public GameManual(String aboutGameFile, String rulesFile) {
         this.aboutGameFile = aboutGameFile;
@@ -24,7 +22,7 @@ public class GameManual {
 
         System.out.println(aboutGameFile);
         BufferedReader br = new BufferedReader(new FileReader(aboutGameFile));
-        String aLineFromFile = null;
+        String aLineFromFile;
         while ((aLineFromFile = br.readLine()) != null){
             aboutGameText = aboutGameText + aLineFromFile + "\n";
         }
@@ -37,7 +35,7 @@ public class GameManual {
 
         System.out.println(rulesFile);
         BufferedReader br = new BufferedReader(new FileReader(rulesFile));
-        String aLineFromFile = null;
+        String aLineFromFile;
         while ((aLineFromFile = br.readLine()) != null){
             rulesText = rulesText + aLineFromFile + "\n";
         }

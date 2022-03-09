@@ -1,9 +1,3 @@
-package Main;
-
-import Controller.GameController;
-import Model.BoardModel;
-import View.BoardView;
-
 import java.io.IOException;
 
 public class Main {

@@ -1,5 +1,3 @@
-package BoardElements;
-
 import javax.swing.*;
 import java.awt.*;
 

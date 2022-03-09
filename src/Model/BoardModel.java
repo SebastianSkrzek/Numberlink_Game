@@ -1,10 +1,3 @@
-package Model;
-
-import BoardElements.Digit;
-import BoardElements.Square;
-import Controller.GameController;
-import View.BoardView;
-
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
